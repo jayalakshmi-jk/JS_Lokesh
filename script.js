@@ -1,6 +1,10 @@
+//===================================array methods==============================================
 // let arr=[1,2,3,4,5]
-// arr.pop();  // remove the number from last number
+// arr.pop();  
 // console.log(arr);
+// //Output
+// [ 1, 2, 3, 4 ]
+
 
 // let arr=[1,2,3,4,5]
 // arr.push(6); //insert the number at end
@@ -32,6 +36,18 @@
 // let numbers=[10,20,67,89,45];
 // let result = numbers.filter(num => num >10);
 // console.log(result);
+
+// let arr=[1,2,3,4,5]
+// let cp=arr.slice(1,3);   
+// console.log(cp);
+
+// let arr = ["apple","mango","cherry"]
+// arr.sort()
+// arr.reversed()
+// console.log(arr);
+// let arr=[1,2,3,4]
+// arr.reverse()
+// console.log(arr);
 
 /*===============================================================================================*/
 
