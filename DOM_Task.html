@@ -1,0 +1,162 @@
+<!-- ----------------------------1) Can change the Text------------------------------------------ -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        p {
+            font-size: large;
+        }
+        .d1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <center>
+            <p id="msg">Welcome to All</p>
+            <button id="btn">Click</button>
+        </center>
+    </div>
+    <script>
+        const btn = document.getElementById("btn");
+        const msg = document.getElementById("msg");
+        btn.onclick = function () {
+            msg.innerHTML = "Hello JavaScript"
+        }
+    </script>
+</body>
+
+</html> -->
+ <!-- ------------------------2) click the button change the color-------------------------- -->
+<!-- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: large;
+            cursor: pointer;
+            background-color: lightgray;
+        }
+    </style>
+ </head>
+ <body>
+    <div>
+        <button id="btn">Click</button>
+    </div>
+    <script>
+       
+        let colors = ["aqua", "red", "yellow", "green"];
+        let i=0;
+        document.getElementById("btn") .onclick = function(){
+            document.body.style.backgroundColor = colors[i];
+            i++;
+            if(i >= colors.length){
+                i=0;
+            }
+        }
+    </script>
+ </body>
+ </html> 
+
+  -->
+ <!-- ------------------------------3) Counter-------------------------------------------------- -->
+  <!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: large;
+        }
+
+        .btn {
+            display: flex;
+            /* justify-content: space-between; */
+            gap: 50px;
+        }
+
+        .para {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="para">
+            <p id="msg">0</p>
+        </div>
+        <div class="btn">
+            <button id="btn1"> - </button>
+            <button id="btn2"> + </button>
+        </div>
+    </div>
+    <script>
+        let para = document.querySelector(".para")
+        let msg = document.getElementById("msg")
+        let btn1 = document.getElementById("btn1")
+        let btn2 = document.getElementById("btn2")
+        let count = 0
+
+        btn1.onclick = function () {
+            count--
+            para.style.backgroundColor = "black"
+            msg.innerHTML = count
+            if (count <0) {
+                para.style.backgroundColor = "red"
+         }
+        }
+        btn2.onclick = function () {
+            count++
+            para.style.backgroundColor = "black"
+            msg.innerHTML = count
+            if (count > 0) {
+                para.style.backgroundColor = "green"
+             }
+        }
+
+    </script>
+</body>
+
+</html> -->

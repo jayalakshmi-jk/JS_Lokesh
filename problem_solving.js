@@ -1,3 +1,4 @@
+//========================================= Tasks
 //1) count alphabetics and numbers
 // let str = "Dckap123";
 // let alpha = 0;
@@ -18,7 +19,6 @@
 // 5
 // 3
 
-
 //2) sum of elements
 // let arr = [1,2,3,4,5,true]
 // let sum=0
@@ -30,7 +30,6 @@
 
 //output
 // sum of elements:15
-
 
 //3) Second largest number
 // let arr = [54,23,11,17,10,54]
@@ -47,7 +46,7 @@
 //         secArr.push(arr[i])
 //      }
 // }
-// // console.log(secArr); 
+// // console.log(secArr);
 
 // let secBig=secArr[0]
 // for(i=0;i<arr.length;i++){
@@ -63,8 +62,6 @@
 // 54
 // [ 23, 11, 17, 10 ]
 // 23
-
-
 
 //4) Ascending and Decending
 // function sortNum(arr, type) {
@@ -96,7 +93,6 @@
 // }
 // sortNum([2,4,3,7,1], "dec");
 
-
 // 5) Sum positive numbers and count negative numbers
 // let arr = [1,2,-3,5,-7,-1,3]
 // sum=0
@@ -114,7 +110,6 @@
 //Output
 // sum=11
 // count=3
-
 
 //6) find the missing number
 // let arr = [1,2,4,6,8,16,20]
@@ -139,3 +134,5 @@
 //     }
 // }
 // console.log(missingNum);
+
+//================================================================================================
