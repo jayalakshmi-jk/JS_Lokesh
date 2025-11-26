@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <style>
+        body {
+            margin: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:70px;
+
+        }
+        .whole-container{
+            display: flex;
+        }
+
+        .container {
+            background-color: black;
+            height: 320px;
+            width: 130px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+
+        .red {
+            background-color: white;
+            border-radius: 30px;
+            height: 60px;
+            width: 60px;
+        }
+
+        .yellow {
+            background-color: white;
+            border-radius: 30px;
+            height: 60px;
+            width: 60px;
+        }
+
+        .green {
+            background-color: white;
+            border-radius: 30px;
+            height: 60px;
+            width: 60px;
+        }
+
+        .bottom-rectangle {
+            height: 60px;
+            width: 30px;
+            background-color: black;
+        }
+
+        .traiangle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .traiangle1 {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-bottom-right-radius: 50px;
+        }
+
+        .traiangle2 {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-bottom-right-radius: 50px;
+        }
+
+        .traiangle3 {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-bottom-right-radius: 50px;
+        }
+
+        .left-traiangle1 {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-bottom-left-radius: 50px;
+        }
+
+        .left-traiangle2 {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-bottom-left-radius: 50px;
+        }
+
+        .left-traiangle3 {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-bottom-left-radius: 50px;
+        }
+        button{
+            height: 35px;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="whole-container">
+    <div class="traiangle">
+        <div class="left-traiangle1">
+
+        </div>
+        <div class="left-traiangle2">
+
+        </div>
+        <div class="left-traiangle3">
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="red" id="red">
+
+        </div>
+        <div class="yellow" id="yellow">
+
+        </div>
+        <div class="green" id="green">
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="traiangle">
+        <div class="traiangle1">
+
+        </div>
+        <div class="traiangle2">
+
+        </div>
+        <div class="traiangle3">
+
+        </div>
+    </div>
+    </div>
+    <div class="btn1">
+    <button id="btn">Click</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById("btn")
+        
+        const red = document.getElementById("red")
+        const yellow = document.getElementById("yellow")
+        const green = document.getElementById("green")
+        let count = 0
+
+        btn.addEventListener("click",callback)
+        function callback(){
+            red.style.backgroundColor = "white"
+            yellow.style.backgroundColor = "white"
+            green.style.backgroundColor = "white"
+
+            count ++
+            if(count == 1){
+                 red.style.backgroundColor = "red"
+            }else if(count == 2){
+                 yellow.style.backgroundColor = "yellow"
+            }else if(count == 3){
+                green.style.backgroundColor = "green"
+                count =0
+
+            }
+        }
+    </script>
+</body>
+
+</html>
